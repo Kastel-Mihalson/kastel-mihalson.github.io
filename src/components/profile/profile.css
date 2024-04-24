@@ -1,0 +1,103 @@
+:root {
+    --textColor: #c5c2cb;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.profiles_block {
+    background-color: rgba(19, 13, 38, 0.85);
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 210px auto 30%;
+    grid-template-rows: repeat(3, 70px);
+    grid-template-areas:
+        "profile title level"
+        "profile description achivment"
+        "profile . edit-button";
+    grid-gap: 10px;
+}
+
+.profile_area {
+    grid-area: profile;
+    display: flex;
+    color: #020202;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.profile_area:hover {
+    transform: scale(1.05);
+}
+
+.title_area {
+    grid-area: title;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--textColor);
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.description_area {
+    grid-area: description;
+    font-style: italic;
+    margin-left: 20px;
+    color: var(--textColor);
+}
+
+.level_area {
+    grid-area: level;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--textColor);
+    display: flex;
+    align-items: center;
+}
+.level_area span {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border: 2px solid tomato;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    color: var(--textColor);
+}
+
+.achivment_area {
+    grid-area: achivment;
+    color: var(--textColor);
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.edit_button_area {
+    grid-area: edit-button;
+    display: flex;
+    align-items: center;
+}
+
+.edit_button {
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #e3ae4c;
+    transition: 0.4s;
+}
+.edit_button:hover {
+    background-color: #5eadc2;
+}
