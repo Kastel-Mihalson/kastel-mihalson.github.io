@@ -1,17 +1,13 @@
-header {
-    height: 40px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 20px;
+.nav_title {
+    color: whitesmoke;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: flex;
-    gap: 10px;
 }
 
 ul li a {
